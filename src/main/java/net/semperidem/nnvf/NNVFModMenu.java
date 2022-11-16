@@ -8,9 +8,9 @@ import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.screen.Screen;
 
 @Environment(EnvType.CLIENT)
-public class NoNVFModMenu implements ModMenuApi {
+public class NNVFModMenu implements ModMenuApi {
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        return (ConfigScreenFactory<Screen>) screen -> AutoConfig.getConfigScreen(NoNVFConfig.class, screen).get();
+        return (ConfigScreenFactory<Screen>) screen -> AutoConfig.getConfigScreen(NNVFConfig.class, screen).get();
     }
 }

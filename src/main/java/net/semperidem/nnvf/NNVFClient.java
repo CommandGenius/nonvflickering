@@ -3,14 +3,17 @@ package net.semperidem.nnvf;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 
-public class NoNVF implements ClientModInitializer {
+@Environment(EnvType.CLIENT)
+public class NNVFClient implements ClientModInitializer {
 
-    public static NoNVFConfig getConfig() {
-        return AutoConfig.getConfigHolder(NoNVFConfig.class).getConfig();
+    public static NNVFConfig getConfig() {
+        return AutoConfig.getConfigHolder(NNVFConfig.class).getConfig();
     }
     @Override
     public void onInitializeClient() {
-        AutoConfig.register(NoNVFConfig.class, GsonConfigSerializer::new);
+        AutoConfig.register(NNVFConfig.class, GsonConfigSerializer::new);
     }
 }

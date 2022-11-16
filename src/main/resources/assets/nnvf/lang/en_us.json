@@ -1,4 +1,4 @@
 {
-  "text.autocofig.nonvflickering.title": "No Night Vision Flickering",
-  "text.autocofig.nonvflickering.option.FADE_OUT_START_TICK": "Fade-out Start Tick"
+  "text.autoconfig.nnvf.title": "No Night Vision Flickering",
+  "text.autoconfig.nnvf.option.FADE_OUT_START_TICK": "Fade-out Start Tick"
 }
