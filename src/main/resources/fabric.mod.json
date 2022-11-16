@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "nonvflickering",
+  "version": "${version}",
+  "name": "No Night Vision Flickering",
+  "description": "This mod changes flickering effect of expiring night vision effect to gentle fade-out, over 5 seconds by default(configurable)",
+  "authors": [
+    "semper-idem"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/sidem/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "sidem.nonvflickering.NoNVF"
+    ],
+    "modmenu": [
+      "sidem.nonvflickering.NoNVFModMenu"
+    ]
+      },
+  "mixins": [
+    "sidem.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
