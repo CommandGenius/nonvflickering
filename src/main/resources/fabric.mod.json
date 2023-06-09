@@ -3,7 +3,7 @@
   "id": "nnvf",
   "version": "${version}",
   "name": "No Night Vision Flickering",
-  "description": "Changes flickering/flashing effect of expiring night vision effect to gentle fade-out, over 5 seconds by default(configurable)",
+  "description": "Changes flickering/flashing effect of expiring night vision effect to gentle fade-out, over 5 seconds",
   "authors": [
     "semper-idem"
   ],
@@ -12,19 +12,12 @@
   "icon": "assets/nnvf/icon.png",
   "environment": "client",
   "entrypoints": {
-    "client": [
-      "net.semperidem.nnvf.NNVFClient"
-    ],
-    "modmenu": [
-      "net.semperidem.nnvf.NNVFModMenu"
-    ]
-      },
+  },
   "mixins": [
     "nnvf.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.10",
-    "fabric": "*",
-    "minecraft": "1.19.*"
+    "minecraft": "1.20.*"
   }
 }
