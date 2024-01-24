@@ -12,12 +12,18 @@
   "icon": "assets/nnvf/icon.png",
   "environment": "client",
   "entrypoints": {
+    "client": [
+      "net.semperidem.nnvf.NNVFClient"
+    ],
+    "modmenu": [
+      "net.semperidem.nnvf.NNVFModMenu"
+    ]
   },
   "mixins": [
     "nnvf.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.10",
-    "minecraft": "1.20.*"
+    "minecraft": ">=1.20.3"
   }
 }
